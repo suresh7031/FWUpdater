@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FWUpdater</string>
+    <string name="guide_step1">1.connect to wifi device in wifi settings. Ex:HomeAuto_******</string>
+    <string name="guide_step2">2.click Proceed, check for newer update availability</string>
+    <string name="guide_step3">3.update device to newer firmware</string>
+    <string name="id_str_download_fw">Download Firmwares</string>
+    <string name="id_str_guide_download">First,click below button to download all firmwares to Android device \u2718</string>
+    <string name="id_str_guide_downloaded">Firmwares downloaded, ready for Firmware upgrade \u2713</string>
+    <string name="id_str_wifi_settings">WIFI Settings</string>
+    <string name="id_str_Proceed">Proceed</string>
+    <string name="id_str_wifi_socket">WIFI Socket</string>
+    <string name="id_str_wifi_dimmer">WIFI Dimmer</string>
+    <string name="id_str_wifi_pir">WIFI Pir</string>
+    <string name="id_str_wifi_ir">WIFI Infrared remote</string>
+    <string name="id_str_alert_msg">Failed!, please Check Network Connection and retry Download</string>
+    <string name="id_srt_fw_download">Firmware Download</string>
+    <string name="id_srt_fw_download_err">Error!, Firmwares not downloaded, please retry.</string>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteY="81dp">
+
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/id_step2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/id_guide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="47dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginRight="47dp"
+            android:text="@string/id_str_guide_download"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/id_step1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/guide_step1"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_btn_download_fw" />
+
+        <TextView
+            android:id="@+id/id_step2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/guide_step2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_step1" />
+
+        <TextView
+            android:id="@+id/id_step3"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/guide_step3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_step2" />
+
+        <Button
+            android:id="@+id/id_btn_download_fw"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/id_str_download_fw"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_guide" />
+
+        <Button
+            android:id="@+id/id_btn_wifi_settings"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="131dp"
+            android:layout_marginLeft="131dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="131dp"
+            android:layout_marginRight="131dp"
+            android:text="@string/id_str_wifi_settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_step3" />
+
+        <Button
+            android:id="@+id/id_btn_proceed"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="131dp"
+            android:layout_marginLeft="131dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="131dp"
+            android:layout_marginRight="131dp"
+            android:layout_marginBottom="30dp"
+            android:enabled="false"
+            android:text="@string/id_str_Proceed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_btn_wifi_settings" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
