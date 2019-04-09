@@ -23,6 +23,8 @@ android {
 }
 
 dependencies {
+
+    def room_version = "2.1.0-alpha04"
     implementation 'org.nanohttpd:nanohttpd:2.3.1'
     def lifecycle_version = "2.0.0"
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -43,6 +45,13 @@ dependencies {
     // For Kotlin use kapt instead of annotationProcessor
     // alternately - if using Java8, use the following instead of lifecycle-compiler
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+
+    //room components
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0-alpha03'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha03'

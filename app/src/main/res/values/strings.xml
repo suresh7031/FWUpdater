@@ -15,4 +15,8 @@
     <string name="id_str_alert_msg">Failed!, please Check Network Connection and retry Download</string>
     <string name="id_srt_fw_download">Firmware Download</string>
     <string name="id_srt_fw_download_err">Error!, Firmwares not downloaded, please retry.</string>
+    <string name="device_type">Device Type:</string>
+    <string name="manufacturer">Manufacturer:</string>
+    <string name="device_model">Device Model:</string>
+    <string name="fw_version">FW Version:</string>
 </resources>
